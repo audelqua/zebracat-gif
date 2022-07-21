@@ -1,27 +1,19 @@
-import {spring} from 'remotion';
 import {
-	AbsoluteFill,
-	interpolate,
-	Sequence,
-	useCurrentFrame,
-	useVideoConfig,
 	Img
 } from 'remotion';
 
-
-export const Image: React.FC<{
+interface ComponentProps {
 	src: string;
   style: object;
   width: number;
   height: number;
-}> = ({src, style, width, height}) => {
-	const frame = useCurrentFrame();
-	const {durationInFrames, fps} = useVideoConfig();
+}
+
+export const Image: React.FC<ComponentProps> = ({src, style, width, height}) => {
 
 	return (
     <div style={{...style}}>
-      <Img src={src} style={{width: width, height: height}}/>
+      <Img src={src} style={{width, height}}/>
     </div>
-    
-	);
-};
+	)
+}
