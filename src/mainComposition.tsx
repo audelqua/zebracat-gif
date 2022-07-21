@@ -7,9 +7,10 @@ import {
 	useVideoConfig,
 	Img
 } from 'remotion';
-import rio from "./assets/images/rio.png";
-import hotel from "./assets/images/hotel.png";
-import cheapFlights from "./assets/images/cheapFlights.png";
+
+import rio from "./assets/images/rio.png"
+import hotel from "./assets/images/hotel.png"
+import cheapFlights from "./assets/images/cheapFlights.png"
 import { Title } from './components/title'
 import { Image } from './components/image'
 

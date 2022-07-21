@@ -1,11 +1,11 @@
-import {Composition} from 'remotion';
-import {MainComposition} from './mainComposition';
+import {Composition} from 'remotion'
+import {MainComposition} from './mainComposition'
 
 export const RemotionVideo: React.FC = () => {
 	return (
 		<>
 			<Composition
-				id="MainComponent"
+				id="mainComponent"
 				component={MainComposition}
 				durationInFrames={150}
 				fps={30}
@@ -13,5 +13,5 @@ export const RemotionVideo: React.FC = () => {
 				height={1080}
 			/>
 		</>
-	);
-};
+	)
+}
